@@ -1,0 +1,30 @@
+{
+  "name": "atlantis-client",
+  "version": "1.0.0",
+  "description": "client for altantis launcher",
+  "main": "main.js",
+  "scripts": {
+    "start-dev": "electron .",
+    "build": "electron-packager . UI --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Runtime\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SashaGoncharov19/atlantis-client.git"
+  },
+  "keywords": [
+    "ragemp",
+    "alt",
+    "launcher"
+  ],
+  "author": "SashaGoncharov19",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SashaGoncharov19/atlantis-client/issues"
+  },
+  "homepage": "https://github.com/SashaGoncharov19/atlantis-client#readme",
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "electron": "^16.0.0",
+    "electron-packager": "^15.4.0"
+  }
+}
